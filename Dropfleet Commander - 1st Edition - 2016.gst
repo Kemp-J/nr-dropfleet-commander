@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bb34-1413-3527-b957" name="Dropfleet Commander: 1st Edition" revision="14" battleScribeVersion="2.03" authorName="morvael; Giftgruen" authorUrl="https://github.com/BSData/dropfleet-commander/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bb34-1413-3527-b957" name="Dropfleet Commander v1.5" revision="15" battleScribeVersion="2.03" authorName="morvael; Giftgruen" authorUrl="https://github.com/BSData/dropfleet-commander/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="bb34-1413-pubN67767" name="RB"/>
     <publication id="bb34-1413-pubN71061" name="PLS318"/>
@@ -1173,17 +1173,16 @@ In addition, weapons with the Calibre H and/or S rule inflict Critical Hits on r
       <description>During this ship&apos;s activation, either before or after movement, pick one friendly or enemy ship within 3&quot; without the Energy Siphon special rule to siphon. That ship loses any Spike it has, and this ship gains it. If any ships in a Group have siphoned any Spikes, all ships in that Group add a bonus to their Occulus Rays for that activation. If the Group siphoned one or more Minor Spikes, increase the Attack and Damage of Oculus Rays by 1. If the Group siphoned one or more Major Spikes, increase the Attack and Damage of Oculus Rays by 2 instead.</description>
     </rule>
     <rule id="1889-ce97-ec0b-7f2b" name="Beast" publicationId="bb34-1413-pubN67767" page="65" hidden="false">
-      <description>The Lock numbers of all of a Beast ship’s weapon systems are reduced by one when it suffers a Crippling Damage result. However, the strain of overload causes the beast ship to suffer another Crippling Damage result at the end of each activation.</description>
+      <description>When this ship suffers a Crippling Damage result, it gains a -1 bonus to its weapon systems’ Lock characteristics.’</description>
     </rule>
     <rule id="8560-b10d-f4cb-d837" name="Reinforced Armour" publicationId="bb34-1413-pubN67767" page="66" hidden="false">
       <description>A ship with Reinforced-Armour only suffers Critical Hits from attack dice that score three more above their Lock number instead of two.</description>
     </rule>
     <rule id="e485-bf08-3dea-b503" name="Regenerate(X)" publicationId="bb34-1413-pubN67767" page="66" hidden="false">
-      <description>A ship with Regenerate can make a number of damage control rolls equal to (x) in the Roundup phase of the turn to regain lost hull points.
-Crippling Damage shuts down the ship’s ability to Regenerate lost hull points for the remainder of the game. The ship can still attempt to repair Crippling Damage results as usual, but the Regenerate ability cannot be repaired. Regenerate damage control rolls also may not be modified for any reason. Note that there is still a chance of the ship taking additional Hull damage if it rolls a 1 on a Regenerate damage control dice - things don’t always work right.</description>
+      <description>A ship with Regenerate can make a number of damage control rolls equal to X in the Roundup phase of the turn to regain lost hull points.</description>
     </rule>
-    <rule id="f6ec-da54-fd6f-2579" name="Mauler(X)" publicationId="bb34-1413-pubN67767" page="67" hidden="false">
-      <description>Maulers work in the same way as Burnthrough weapons except that their Lock number is always equal to the Armour of the targeted ship (not Passive Countermeasures). Maulers are close action weapons so their damage can be mitigated by Point Defence (effectively it is disrupting the ionised trail).</description>
+    <rule id="f6ec-da54-fd6f-2579" name="Mauler" publicationId="bb34-1413-pubN67767" page="67" hidden="false">
+      <description>The Lock characteristic of a Mauler weapon is equal to the Armour characteristic of the targeted ship.</description>
     </rule>
     <rule id="5728-9541-723c-84a4" name="Close Action (Swarmer)" publicationId="bb34-1413-pubN67767" page="68" hidden="false">
       <description>It takes one Point Defence success more than normal to stop a point of Hull damage from a Swarmer weapon. This means that two successes are need to stop a normal hit from a swarmer, three successes for a critical.</description>
@@ -1222,11 +1221,7 @@ Crippling Damage shuts down the ship’s ability to Regenerate lost hull points 
     <rule id="1996-3e6f-41b3-739c" name="Atmospheric Weapons" publicationId="07fb-79fc-ad90-6f9e" page="194" hidden="false"/>
     <rule id="c137-9160-3359-cc67" name="The Shields Cannae Take Anymore" publicationId="07fb-79fc-ad90-6f9e" page="194" hidden="false"/>
     <rule id="def9-d03d-747e-fd91" name="Overcharge" publicationId="07fb-79fc-ad90-6f9e" page="194" hidden="false">
-      <description>A ship on the Weapons Free special order may choose to Overcharge this weapon (or group of Overcharge weapons with the Linked special rule). Double the Damage value of these weapons.
-
-If Overcharging, no other weapons (other than Close Action weapons) may be fired by the ship that turn. Launch Assets may still be deployed as normal.
-
-EXPERIMENTAL ALTERNATE RULE: A weapon with this rule may be Overcharged. An Overcharged weapon (and any weapons with Overcharge it is Linked with) doubles its Damage value for that attack.
+      <description>A weapon with this rule may be Overcharged. An Overcharged weapon (and any weapons with Overcharge it is Linked with) doubles its Damage value for that attack.
 
 If the overcharging ship is on Weapons Free Orders it may only fire Close Action or Low Power weapons but not any other weapon types. However, if the ship is on any other Orders it may not use Launch Assets or fire any other weapons, including Close Action and Low Power weapons.</description>
     </rule>
@@ -1237,8 +1232,7 @@ If the overcharging ship is on Weapons Free Orders it may only fire Close Action
       <description>A Battlegroup containing a Dreadnought may not contain any other ships. A Dreadnought has a tonnage of 30 (hence the S2 in the profile). A Battlegroup containing a Dreadnought may exceed the normally allowed 33% of your fleet’s points cost.
 If taken, your Admiral must be mounted in a Dreadnought.
 Dreadnoughts use special Crippling Damage and Catastrophic Damage tables, shown in the damage section. In addition, roll on the Crippling Damage table when the ship is reduced to 18 Hull or less and 10 Hull or less instead of the usual 50% of original hull.
-
-EXPERIMENTAL RULE: Standard Orders and Special Orders that allow a Dreadnought to fire one weapon system allow it to fire up to two weapon systems instead.”</description>
+Standard Orders and Special Orders that allow a Dreadnought to fire one weapon system allow it to fire up to two weapon systems instead.</description>
     </rule>
     <rule id="7780-d65b-a8d3-0684" name="Light 2 Tonnage" publicationId="07fb-79fc-ad90-6f9e" page="194" hidden="false"/>
     <rule id="bc43-3371-9c92-dfb6" name="Monitor" publicationId="07fb-79fc-ad90-6f9e" page="194" hidden="false">
